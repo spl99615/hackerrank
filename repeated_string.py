@@ -1,4 +1,5 @@
 def repeatedString(s, n):
+    print(s.count("a") * (n // len(s)) + s[:n % len(s)].count("a"))
     if s == 'a':
         return n
     if n % len(s) == 0:
