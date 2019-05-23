@@ -1,9 +1,8 @@
 from re import compile
-from re import match
 
 
-#pattern = compile('"(\w+=\w+)"|"(\w+=\w+; )*(\w+=\w+)"')
-pattern = compile('"(\w+=\s*\w+; )*(\w+=\s*\w+)"')
+# pattern = compile('"(\w+=\w+)"|"(\w+=\w+; )*(\w+=\w+)"')
+pattern = compile(r'"(\w+=\s*\w+; )*(\w+=\s*\w+)"')
 
 
 checkstr = '"coding=helloworld; foobar=demo; random=error"'
